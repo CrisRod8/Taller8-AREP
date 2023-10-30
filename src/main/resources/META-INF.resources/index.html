@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>ECI POSTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wingcss/0.1.8/wing.min.css"/>
+    <!-- Load AngularJS -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="TweetsManagement" ng-controller="TweetsManagementController">
+
+<div class="container">
+    <h1>REST Service - Tweets</h1>
+
+    <h3>Add a tweet</h3>
+    <form ng-submit="add()">
+        <!--        <div class="row">-->
+        <!--            <div class="col-6"><input type="text" placeholder="id" ng-model="form.id" size="60"/></div>-->
+        <!--        </div>-->
+        <div class="row">
+            <div class="col-6"><input type="text" placeholder="content" ng-model="form.content" size="200" maxlength="140"/></div>
+        </div>
+        <input type="submit" value="Tweet"/>
+    </form>
+
+    <h3>Tweets Feed</h3>
+    <div class="row">
+        <!--        <div class="col-4">id</div>-->
+        <div class="col-8">Content</div>
+    </div>
+    <div class="row" ng-repeat="tweet in tweets">
+        <!--        <div class="col-4">{{ tweet.id }}</div>-->
+        <div class="col-8">{{ tweet.content }}</div>
+    </div>
+
+    <script src = './index.js'></script>
+</div>
+
+</body>
+</html>
