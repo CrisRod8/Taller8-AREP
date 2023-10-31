@@ -21,7 +21,7 @@ $scope.add = function () {
 
   $http({
     method: "POST",
-    url: 'http://ec2-54-167-126-6.compute-1.amazonaws.com:8080/stream',
+    url: 'http://ec2-3-90-18-149.compute-1.amazonaws.com:8080/stream',
     data: angular.toJson(data),
     headers: {
       'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ $scope.add = function () {
 function _refreshPageData() {
   $http({
     method: 'GET',
-    url: 'http://ec2-54-167-126-6.compute-1.amazonaws.com:8080/stream'
+    url: 'http://ec2-3-90-18-149.compute-1.amazonaws.com:8080/stream'
   }).then(function successCallback(response) {
     $scope.tweets = response.data;
   }, function errorCallback(response) {
