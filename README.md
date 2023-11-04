@@ -1,8 +1,11 @@
 # Taller8-AREP
 ### Integrantes: Julia Mejia y Cristian Rodriguez  
+
+Aclaración: El profesor nos dió plazo de entrega para el laboratorio hasta el viernes 3/11  
+
 API que permita a los usuarios hacer posts de 140 caracteres e ir registrandolos en un stream único de posts (a la Twitter).  
 
-## EJECUCION
+## EJECUCIÓN
 1. Guardamos los archivos estaticos en un bucket S3  
    <img width="286" alt="image" src="https://github.com/CrisRod8/Taller8-AREP/assets/111186898/02e848e6-b39d-40ce-bd8e-f6ab2186753b">  
    <img width="627" alt="image" src="https://github.com/CrisRod8/Taller8-AREP/assets/111186898/9b289e23-5386-4d97-8248-bb6b02812abe">
